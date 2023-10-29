@@ -35,7 +35,7 @@ seo:
 
 # Event information.
 event:
-  name:        "Example Hacks"
+  name:        "HenHacks"
   description: "This is a sample hackathon website that you can use by following instructions on GitHub."
   date:        "5 - 6 August 2022"
   location:    "Holmdel, NJ, United States"
@@ -47,21 +47,23 @@ event:
 
   hero:
     links:
-      - text: "Apply"
+      - text: "Register"
         my_mlh:
           client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
           redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
-      - text: "Sponsor"
+      - text: "Sponsor Us!"
         href: "mailto:sponsorship@website.com"
 
   about:
     description: >
-      Example Hacks is a hackathon hosted at The University of Example.
-      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
-      Keep it straightforward, don't make it too long.
+      Our description will go here!
+      Here's some more text for fanciness
+      fancy fancy!
 
   # Info Sections
   info:
+    description: >
+        Theme~ Hack to save the world! 
     sections:
       - image: "images/image1.png"
         title: "LEARN."

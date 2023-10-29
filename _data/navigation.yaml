@@ -1,0 +1,10 @@
+- name: Home
+  link: index.html
+- name: Volunteer
+  link: /volunteer.html
+- name: Sponsor Us
+  link: /sponsorevent.html
+- name: Rules
+  link: /rules.html
+- name: Schedule
+  link: /schedule.html
