@@ -1,0 +1,12 @@
+.event-dropdown {
+    position: relative;
+    display: block;
+}
+
+.event-dropdown-content {
+    display: none;
+}
+
+.event-dropdown:hover .event-dropdown-content {
+    display: block;
+}

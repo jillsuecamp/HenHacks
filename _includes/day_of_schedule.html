@@ -1,0 +1,17 @@
+{% if site.event.display_schedule  == "true" %}
+    {% for day in site.event.schedule %}
+    <div class="day-of-schedule-container">
+        <h1 class="" >{{day.name}}</h1>
+        {% for main_event in day.events %}
+            <div class="event-dropdown">
+                <h3>{{main_event.time}} {{main_event.name}}</h3></br>
+                {% for sub_event in main_event.sub-events %}
+                    <div class="sub-event event-dropdown-content">
+                        <p>{{sub_event.time}} {{sub_event.name}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+{% endif %}

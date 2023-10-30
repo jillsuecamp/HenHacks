@@ -10,6 +10,9 @@
 /* Montserrat Google Font */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+/* schedule-layout.css */
+@import url(./scheduleLayout.css);
+
 /*
  * Primary Blue: #44D5FF;
  * Dark Blue: #0F2C34;
