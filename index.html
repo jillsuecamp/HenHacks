@@ -28,11 +28,13 @@ layout: default
   </div>
 </section>
 
-<section class="info">
-  <div class="container">
-    {% include day_of_schedule.html %}
-  </div>
-</section>
+{% if site.event.display_schedule  == "true" %}
+  <section class="info">
+    <div class="container">
+      {% include day_of_schedule.html %}
+    </div>
+  </section>
+{% endif %}
 
 <section class="faq">
   <div class="container">
