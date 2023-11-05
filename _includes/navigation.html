@@ -1,13 +1,23 @@
 <style>
   .bar {
-      display: flex;
-      font-size: 25px;
+      display: inline-flex;
+      font-size: 20px;
       flex-direction: row;
-      justify-content: space-evenly;
-      
+      justify-content: flex-end;
+      gap: 30px;
+     /* padding-right: 200px; */
+      padding-top: 20px;
+      padding-left: 950px;
+  }
+
+  .hentitle {
+      display: inline-block;
+      font-size: 30px;
+      padding-left: 50px;
   }
 </style>
 
+<p class="hentitle">HenHacks &OpenCurlyQuote;24</p>
 <nav class="bar">
 	{% for item in site.data.navigation %}
   <a href="{{ item.link }}">{{ item.name }}</a>		
