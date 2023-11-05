@@ -46,61 +46,6 @@ event:
     color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
   display_schedule: "true"
-  schedule:
-    - name: "Day 1"
-      events:
-        - name: "DOORS OPEN"
-          time: "10:00"
-          sub-events:
-            - name: "Opening Remarks"
-              time : "11:00"
-            - name: "Opening Remarks"
-              time : "11:00"
-        - name: "LUNCH"
-          time: "12:00"
-          sub-events:
-            - name: "Bank of America Workshop"
-              time : "1:00"
-            - name: "Autonomous Driving"
-              time : "1:30"
-            - name: "M&T Workshop"
-              time : "2:00"
-            - name: "Meet the Companies"
-              time : "3:15"
-            - name: "Labware Workshop"
-              time : "4:15"
-            - name: "Chase Workshop"
-              time : "5:30"
-        - name: "Dinner"
-          time: "6:00"
-          sub-events:
-            - name: "Egg hunt"
-              time: "6:00"
-            - name: "LEGO-off"
-              time: "6:30"
-            - name: "Just Dance"
-              time: "7:00"
-            - name: "Autograding Workshop"
-              time: "8:00"
-            - name: "Hack Workshop"
-              time: "8:30"
-    - name: "Day 2"
-      events:
-        - name: "Breakfast"
-          time: "8:00"
-        - name: "Hacks due and Lunch Starts"
-          time: "12:00"
-          sub-events:
-            - name: "Presenting hacks starts"
-              time: "12:00"
-            - name: "Presenting hacks ends"
-              time: "2:00"
-            - name: "Judging"
-              time: "2:00"
-        - name: "Award Ceremony"
-          time: "3:00"
-        - name: "Doors close"
-          time: "4:00"
 
   hero:
     links:

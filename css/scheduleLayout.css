@@ -9,6 +9,8 @@
 
 .event-dropdown:hover .event-dropdown-content {
     display: block;
+    height: 0;
+    animation: 5s smooth-drop;
 }
 
 .schedule-container {

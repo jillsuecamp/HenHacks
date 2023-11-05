@@ -1,7 +1,7 @@
 <!-- schedule layout skeleton -->
 <h1 class="text-center">Schedule</h1>
 <div class="schedule-container">
-    {% for day in site.event.schedule %}
+    {% for day in site.data.schedule_layout.schedule %}
         <!-- day container -->
         <div class="day-schedule-container">
             <h2 class="text-center" >{{day.name}}</h2>
