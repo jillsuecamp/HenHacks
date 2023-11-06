@@ -1,13 +1,15 @@
 <style>
   .bar {
+      /* Flex Box Stuff */
       display: inline-flex;
-      font-size: 20px;
       flex-direction: row;
       justify-content: flex-end;
       gap: 30px;
      /* padding-right: 200px; */
       padding-top: 20px;
       padding-left: 950px;
+      flex-grow: 1;
+      
   }
 
   .hentitle {
@@ -15,11 +17,32 @@
       font-size: 30px;
       padding-left: 50px;
   }
+
+  .text {
+      /* Text within items */
+      font-size: 20px;
+      color: #F8BDD5;
+      
+
+      transition: all 1s ease-in-out;
+  }
+
+  .text:hover {
+      font-size: 150%;
+      transition: all 1s ease-out;
+      text-decoration: none;
+  }
+
+  .bg {
+      background: #F25B59
+  }
 </style>
 
-<p class="hentitle">HenHacks &OpenCurlyQuote;24</p>
-<nav class="bar">
-	{% for item in site.data.navigation %}
-  <a href="{{ item.link }}">{{ item.name }}</a>		
-	{% endfor %}
-</nav>
+<body style="background: crimson;">
+  <p class="hentitle">HenHacks &OpenCurlyQuote;24</p>
+  <nav class="bar">
+    {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" class="text">{{ item.name }}</a>		
+    {% endfor %}
+  </nav>
+</body>
