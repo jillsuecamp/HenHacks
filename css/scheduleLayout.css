@@ -9,26 +9,39 @@
 
 .schedule-btn-dropdown {
     width: 100%;
-    background-color: transparent;
+    background-color: var(--appleRed);
     border: 2px solid var(--appleRed);
     border-radius: 25px;
     transition: 2s all;
 }
 
+.schedule-event-headings {
+    width: 100%;
+}
 
 .schedule-btn-dropdown:hover {
+    color: var(--white);
     border-color: var(--deepOceanBlue);
-    
+    background-color: var(--deepOceanBlue);
 }
 
 .schedule-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
 }
 
 .schedule-event {
     pointer-events: none;
-    justify-content: space-around;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.schedule-day-title {
+    width: 100%;
+    border: 4px solid var(--samonOrange);
+    background-color: var(--samonOrange);
+    border-radius: 25px;
 }
 
 .show-dropdown {

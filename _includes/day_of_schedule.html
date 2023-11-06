@@ -1,15 +1,22 @@
 <!-- schedule layout skeleton -->
-<h1 class="text-center">Schedule</h1>
+<h1 class="text-center schedule-section-title">Schedule</h1>
 <div class="schedule-container">
     {% for day in site.data.schedule_layout.schedule %}
         <!-- day container -->
         <div class="day-schedule-container">
-            <h2 class="text-center" >{{day.name}}</h2>
+            <h2 class="text-center schedule-day-title" >{{day.name}}</h2>
             {% for main_event in day.events %}
                 <!-- sub-event info -->
-                <div class="event-dropdown text-center">
+                <div class="event-dropdown">
                     <button onclick="scheduleDropdown(event)" class="schedule-btn-dropdown">
-                        <h3 class="schedule-event">{{main_event.time}} {{main_event.name}}</h3>
+                        <h3 class="schedule-event">
+                            <div>
+                                <p class="schedule-event-headings left-text-align">{{main_event.time}}</p>
+                            </div>
+                            <div>
+                                <p class="schedule-event-headings right-text-align">{{main_event.name}}</p>
+                            </div>
+                        </h3>
                         </br>
                         <div class="sub-event text-center schedule-dropdown-content">
                             {% for sub_event in main_event.sub-events %}    

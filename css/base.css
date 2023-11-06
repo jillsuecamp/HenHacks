@@ -5,3 +5,17 @@
     --pigPink : #F8BDD5;
     --appleRed : #F25B59;
 }
+
+.inline {
+    display: inline-block;
+}
+
+.left-text-align {
+    position: relative;
+    text-align: left;
+}
+
+.right-text-align {
+    position: relative;
+    text-align: right;
+}
