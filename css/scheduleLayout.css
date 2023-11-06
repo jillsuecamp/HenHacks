@@ -1,6 +1,15 @@
+.day-schedule-container {
+    height: 100%;
+}
+
 .event-dropdown {
     position: relative;
     display: block;
+}
+
+.event-information {
+    display: grid;
+    grid-template-columns: 5% 20% 5% 70%;
 }
 
 .schedule-dropdown-content {
@@ -17,6 +26,7 @@
 
 .schedule-event-headings {
     width: 100%;
+    margin-bottom: 0;
 }
 
 .schedule-btn-dropdown:hover {

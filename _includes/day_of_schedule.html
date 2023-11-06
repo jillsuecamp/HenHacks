@@ -20,7 +20,14 @@
                         </br>
                         <div class="sub-event text-center schedule-dropdown-content">
                             {% for sub_event in main_event.sub-events %}    
-                                <p>{{sub_event.time}} {{sub_event.name}}</p></br>
+                                <div class="event-information">
+                                    <div></div>
+                                    <p class="right-text-align">{{sub_event.time}}</p>
+                                    <div>
+                                        <p> ------- </p>
+                                    </div>
+                                    <p class="left-text-align">{{sub_event.name}}</p>
+                                </div>
                             {% endfor %}
                         </div>
                     </button>
