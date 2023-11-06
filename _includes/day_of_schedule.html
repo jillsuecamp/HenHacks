@@ -22,11 +22,11 @@
                             {% for sub_event in main_event.sub-events %}    
                                 <div class="event-information">
                                     <div></div>
-                                    <p class="right-text-align">{{sub_event.time}}</p>
+                                    <p class="sub-event-info right-text-align">{{sub_event.time}}</p>
                                     <div>
-                                        <p> ------- </p>
+                                        <p class="sub-event-info"> ------- </p>
                                     </div>
-                                    <p class="left-text-align">{{sub_event.name}}</p>
+                                    <p class="sub-event-info left-text-align">{{sub_event.name}}</p>
                                 </div>
                             {% endfor %}
                         </div>
