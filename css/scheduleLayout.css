@@ -3,17 +3,34 @@
     display: block;
 }
 
-.event-dropdown-content {
+.schedule-dropdown-content {
     display: none;
 }
 
-.event-dropdown:hover .event-dropdown-content {
-    display: block;
-    height: 0;
-    animation: 5s smooth-drop;
+.schedule-btn-dropdown {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--appleRed);
+    border-radius: 25px;
+    transition: 2s all;
+}
+
+
+.schedule-btn-dropdown:hover {
+    border-color: var(--deepOceanBlue);
+    
 }
 
 .schedule-container {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.schedule-event {
+    pointer-events: none;
+    justify-content: space-around;
+}
+
+.show-dropdown {
+    display: block;
 }

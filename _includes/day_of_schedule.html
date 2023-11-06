@@ -8,14 +8,27 @@
             {% for main_event in day.events %}
                 <!-- sub-event info -->
                 <div class="event-dropdown text-center">
-                    <h3>{{main_event.time}} {{main_event.name}}</h3></br>
-                    {% for sub_event in main_event.sub-events %}
-                        <div class="sub-event event-dropdown-content text-center">
-                            <p>{{sub_event.time}} {{sub_event.name}}</p>
+                    <button onclick="scheduleDropdown(event)" class="schedule-btn-dropdown">
+                        <h3 class="schedule-event">{{main_event.time}} {{main_event.name}}</h3>
+                        </br>
+                        <div class="sub-event text-center schedule-dropdown-content">
+                            {% for sub_event in main_event.sub-events %}    
+                                <p>{{sub_event.time}} {{sub_event.name}}</p></br>
+                            {% endfor %}
                         </div>
-                    {% endfor %}
+                    </button>
                 </div>
+            </br>
             {% endfor %}
         </div>
     {% endfor %}
 </div>
+
+<script>
+    /**
+     * takes in an event for the dropdown buttons and toggles the veiw of the dropdown content
+     */
+    function scheduleDropdown(e) {
+        if(e.srcElement.children[2]) e.srcElement.children[2].classList.toggle("show-dropdown");
+    }
+</script>
