@@ -39,10 +39,15 @@
 </div>
 
 <script>
+    // toggles the hover effect to constant when the dropdown is clicked
+    function toggleHoverEffect(srcElement) {
+        srcElement.classList.toggle("pseudo-schedule-btn-dropdown-hover")
+    }
     /**
      * takes in an event for the dropdown buttons and toggles the veiw of the dropdown content
      */
     function scheduleDropdown(e) {
+        toggleHoverEffect(e.srcElement);
         if(e.srcElement.children[2]) e.srcElement.children[2].classList.toggle("show-dropdown");
     }
 </script>

@@ -14,6 +14,7 @@
 
 .schedule-dropdown-content {
     display: none;
+    pointer-events: none;
 }
 
 .schedule-btn-dropdown {
@@ -34,8 +35,14 @@
     border-color: var(--deepOceanBlue);
     background-color: var(--deepOceanBlue);
 }
+.pseudo-schedule-btn-dropdown-hover {
+    color: var(--white);
+    border-color: var(--deepOceanBlue);
+    background-color: var(--deepOceanBlue);
+}
 
 .schedule-container {
+    height: 100%;
     display: grid;
     grid-template-rows: 50% 50%;
 }
@@ -43,6 +50,7 @@
 .schedule-event {
     pointer-events: none;
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -61,3 +69,4 @@
 .show-dropdown {
     display: block;
 }
+
