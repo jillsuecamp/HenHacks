@@ -10,7 +10,6 @@ function toggleDropdown(srcElement) {
         // visability is toggled
         const subNodes = srcElement.children;
         for (let i = 0; i < srcElement.children.length; i++) {
-            console.log(subNodes[i]);
             if(subNodes[i].classList.contains("dropdown-content")) {
                 subNodes[i].classList.toggle("show-dropdown");
             }

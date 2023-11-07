@@ -41,11 +41,15 @@
     margin-bottom: 0;
 }
 
-.schedule-btn-dropdown:hover {
-    color: var(--white);
-    border-color: var(--deepOceanBlue);
-    background-color: var(--deepOceanBlue);
+/* disables hover effects on non-hover device */
+@media any-hover {
+    .schedule-btn-dropdown:hover {
+        color: var(--white);
+        border-color: var(--deepOceanBlue);
+        background-color: var(--deepOceanBlue);
+    }
 }
+
 .pseudo-schedule-btn-dropdown-hover {
     color: var(--white);
     border-color: var(--deepOceanBlue);
@@ -55,7 +59,7 @@
 .schedule-container {
     height: min-content;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto auto;
 }
 
 .schedule-event {
