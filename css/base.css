@@ -19,3 +19,12 @@
     position: relative;
     text-align: right;
 }
+
+/* for button dropdowns */
+.dropdown-content {
+    display: none;
+}
+
+.show-dropdown {
+    display: block;
+}

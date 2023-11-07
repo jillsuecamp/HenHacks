@@ -1,3 +1,5 @@
+
+
 <!-- schedule layout skeleton -->
 <h1 class="text-center schedule-section-title">Schedule</h1>
 <div class="schedule-container">
@@ -18,7 +20,7 @@
                             </div>
                         </h3>
                         </br>
-                        <div class="sub-event text-center schedule-dropdown-content">
+                        <div class="sub-event text-center schedule-dropdown-content dropdown-content">
                             <ul class="sub-event-info-list">
                                 {% for sub_event in main_event.sub-events %}
                                     <li class="sub-event-info-list-element">
@@ -46,14 +48,14 @@
 
 <script>
     // toggles the hover effect to constant when the dropdown is clicked
-    function toggleHoverEffect(srcElement) {
+    function toggleScheduleHoverEffect(srcElement) {
         srcElement.classList.toggle("pseudo-schedule-btn-dropdown-hover")
     }
     /**
      * takes in an event for the dropdown buttons and toggles the veiw of the dropdown content
      */
     function scheduleDropdown(e) {
-        toggleHoverEffect(e.srcElement);
-        if(e.srcElement.children[2]) e.srcElement.children[2].classList.toggle("show-dropdown");
+        toggleScheduleHoverEffect(e.srcElement);
+        toggleDropdown(e.srcElement);
     }
 </script>

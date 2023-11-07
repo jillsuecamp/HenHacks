@@ -25,7 +25,6 @@
 }
 
 .schedule-dropdown-content {
-    display: none;
     pointer-events: none;
 }
 
@@ -76,9 +75,5 @@
 
 .sub-event-info {
     font-size: 24px;
-}
-
-.show-dropdown {
-    display: block;
 }
 
