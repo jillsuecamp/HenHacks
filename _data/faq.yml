@@ -1,0 +1,22 @@
+# Frequently asked questions.
+  faqs:
+    - question: "What is a hackathon?"
+      answer: >
+        A hackathon is an invention marathon. Students come together to build cool
+        software & hardware hacks over 24-48 hours.
+    - question: "Do I need to know how to code?"
+      answer: > 
+        You do not need to know how to code! We accept all college students of any major or skill
+    - question: "How much does it cost?"
+      answer: >
+        Nothing. Attending a hackathon is free.
+    - question: "Do I need to be a student to attend?"
+      answer: >
+        You do not need to be a student of the University of Delaware! We accept all college students!
+    - question: "When and Where?"
+      answer: >
+        The event is being hosted at [University of Delaware](https://maps.app.goo.gl/wm9SQUY4ToD1TC366) at [Smith Hall]() and [Gore Hall]() on
+        March 2nd-3rd.
+    - question: "Is there a code of conduct?"
+      answer: >
+        Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).

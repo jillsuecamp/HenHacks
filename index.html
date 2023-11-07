@@ -41,11 +41,20 @@ layout: default
     <h1 class="text-center">FAQ</h1>
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        {% for item in site.event.faq %}
+        {% for item in site.data.faq.faqs %}
         <div class="question col-xs-12 col-sm-12">
-          <h2>{{ item.question }}</h2>
-          <hr>
-          {{ item.answer | markdownify }}
+          <button onclick="triggerDropdown(event)" class="dropdown-btn">
+            <h2 class="clickthrough">
+              <p class="inline">{{ item.question }}</p>
+              <div class="inline arrow-right"></div>
+            </h2>
+            <div class="dropdown-content">
+              {{ item.answer | markdownify }}
+            </div>
+            
+          </button> 
+          
+          
         </div>
         {% endfor %}
       </div>

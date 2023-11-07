@@ -21,10 +21,32 @@
 }
 
 /* for button dropdowns */
+.arrow-right {
+    width: 0;
+    height: 0;
+    
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    
+    border-left: 20px solid var(--white);
+}
+
+.dropdown-btn {
+    width: 100%;
+    border: 2px var(--deepOceanBlue) solid;
+    border-radius: 25px;
+    transition: all 5s ease;
+}
+
 .dropdown-content {
     display: none;
+    pointer-events: none;
 }
 
 .show-dropdown {
     display: block;
+}
+
+.clickthrough {
+    pointer-events: none;
 }
