@@ -1,5 +1,5 @@
 .day-schedule-container {
-    height: 100%;
+    height: min-content;
 }
 
 .event-dropdown {
@@ -7,9 +7,21 @@
     display: block;
 }
 
+.sub-event-info-list {
+    list-style-type: none;
+}
+
+.sub-event-info-list-element {
+    padding-bottom: 10px;
+}
+
+
 .event-information {
     display: grid;
-    grid-template-columns: 5% 20% 10% 65%;
+    grid-template-columns: 2% 7% 5% 26% 60%;
+    background-color: var(--appleRed);
+    border: solid 2px var(--appleRed);
+    border-radius: 15px;
 }
 
 .schedule-dropdown-content {
@@ -42,7 +54,7 @@
 }
 
 .schedule-container {
-    height: 100%;
+    height: min-content;
     display: grid;
     grid-template-rows: 50% 50%;
 }

@@ -19,16 +19,22 @@
                         </h3>
                         </br>
                         <div class="sub-event text-center schedule-dropdown-content">
-                            {% for sub_event in main_event.sub-events %}    
-                                <div class="event-information">
-                                    <div></div>
-                                    <p class="sub-event-info right-text-align">{{sub_event.time}}</p>
-                                    <div>
-                                        <p class="sub-event-info"> ------- </p>
-                                    </div>
-                                    <p class="sub-event-info left-text-align">{{sub_event.name}}</p>
-                                </div>
-                            {% endfor %}
+                            <ul class="sub-event-info-list">
+                                {% for sub_event in main_event.sub-events %}
+                                    <li class="sub-event-info-list-element">
+                                        <div class="event-information">
+                                            <div></div>
+                                            <p class="sub-event-info right-text-align">{{sub_event.time}}</p>
+                                            <div>
+                                                <p class="sub-event-info"> - </p>
+                                            </div>
+                                            <p class="sub-event-info left-text-align">{{sub_event.name}}</p>
+                                            <div></div>
+                                        </div>
+                                    </li>    
+                                {% endfor %}
+                            </ul>
+                            
                         </div>
                     </button>
                 </div>
