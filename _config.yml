@@ -56,9 +56,8 @@ event:
 
   about:
     description: >
-      Our description will go here!
-      Here's some more text for fanciness
-      fancy fancy!
+     Join us as HenHacks makes its proud return for a second year, bringing together over [theme] students from across the state. This beginner-friendly hackathon takes place right on the University of Delaware campus and is open to college students of all majors. Our mission is to empower students by enhancing their technical skills, equipping them to positively impact their communities and excel in technology-related careers.
+
 
   # Info Sections
   info:
