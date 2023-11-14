@@ -1,0 +1,15 @@
+
+
+.volunteering-info {
+    background-color: var(--appleRed);
+}
+
+/* media rules for images on phone */
+@media only screen and (max-width: 425) {
+    
+}
+
+/* media rules for laptop */
+@media  screen and (min-width: 425) {
+    
+}
