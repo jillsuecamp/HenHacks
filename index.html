@@ -33,15 +33,7 @@ layout: default
   </div>
 </section>
 
-{% if site.event.display_schedule  == "true" %}
-  <section class="info">
-    <div class="container">
-      {% include day_of_schedule.html %}
-    </div>
-  </section>
-{% endif %}
-
-<section class="faq">
+<section class="faq" id="faq">
   <div class="container">
     <h1 class="text-center">FAQ</h1>
     <div class="row">
@@ -57,3 +49,15 @@ layout: default
     </div>
   </div>
 </section>
+
+<section>
+<div class="buttons" id="sponsor">
+  {% for link in site.event.hero.links %}
+  {% if link.target %}
+  <a href="{{ link.href }}" target="_blank" rel="noopener noreferrer">{{ link.text }}</a>
+  {% endif %}
+  {% endfor %}
+</div>
+</section>
+
+

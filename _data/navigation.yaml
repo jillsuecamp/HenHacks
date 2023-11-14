@@ -1,11 +1,13 @@
 - name: Home
-  link: index.html
+  link: index
+- name: FAQ
+  link: index#faq
 - name: Volunteer
-  link: /volunteer.html
-- name: Sponsor Us
+  link: volunteer
+- name: Sponsors
   link: https://drive.google.com/file/d/1vAurQeUOGM0VkHNCrV5HPh4RCgCjyBjq/view
   target: true
 - name: Rules
-  link: /rules.html
+  link: rules
 - name: Schedule
-  link: /schedule.html
+  link: schedule
