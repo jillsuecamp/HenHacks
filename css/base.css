@@ -6,13 +6,10 @@
     --appleRed : #F25B59;
 }
 
-.img-laptop {
-    display: none;
+.img-laptop .img-mobile{
+    width: fit-content;
 }
-.img-mobile {
-    display: none;
-}
-/* media rules for laptop */
+/* media rules for laptop sized images*/
 @media screen and (min-width: 600px) {
     .img-mobile {
         display: none;
@@ -22,7 +19,7 @@
     }
 }
 
-/* media rules for images on phone */
+/* media rules for images on phone sized images*/
 @media screen and (max-width: 600px) {
     .img-mobile {
         display: block;

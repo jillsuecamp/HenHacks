@@ -3,3 +3,15 @@
 .volunteering-info {
     background-color: var(--appleRed);
 }
+
+.volunteering-info-description {
+    list-style-type: none;
+}
+
+.volunteering-info-list-items {
+    text-align: left;
+}
+
+.volunteering-info-p {
+    font-size: large;
+}

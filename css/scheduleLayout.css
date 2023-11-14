@@ -15,14 +15,37 @@
     padding-bottom: 10px;
 }
 
-
 .event-information {
-    display: grid;
-    grid-template-columns: 2% 7% 5% 26% 60%;
     background-color: var(--appleRed);
     border: solid 2px var(--appleRed);
     border-radius: 15px;
 }
+/* mobile display */
+@media screen and (max-width: 400px) {
+    .event-information {
+        display: grid;
+        grid-template-columns: 2.5% 25% 10% 40% 2.5%;
+    }
+    .sub-event-info-list {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .event-information {
+        display: grid;
+        grid-template-columns: 5% 20% 10% 50% 5%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .event-information {
+        display: grid;
+        grid-template-columns: 5% 15% 10% 65% 5%;
+    }
+}
+
 
 .schedule-dropdown-content {
     pointer-events: none;
@@ -42,7 +65,7 @@
 }
 
 /* disables hover effects on non-hover device */
-@media any-hover {
+@media (hover: hover) {
     .schedule-btn-dropdown:hover {
         color: var(--white);
         border-color: var(--deepOceanBlue);
@@ -67,7 +90,7 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 10% 40% 40% 10%;
 }
 
 .schedule-day-title {

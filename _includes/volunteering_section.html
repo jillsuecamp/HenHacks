@@ -3,65 +3,66 @@
         <h1 class="text-center">Interested in Volunteering?</h1>
     </div>
     <hr>
-    <div>
-        <h2 class="center">
-            Currently, we are looking for students to help make HenHacks as fun and engaging as possible on 
-            <strong>March 2-3, 2024</strong>!
-        </h2>
-        <section class="text-center">
-            <h2>What you gain:</h2>
-            <div class="img-laptop">
-                <img class="inline" src="http://via.placeholder.com/650x300" alt=""></img>
-            </div>
-            <div class="img-mobile">
-                <img class="inline" src="http://via.placeholder.com/300x250" alt=""></img>
-            </div>
-            
-            <article class="inline">
-                <ul class="volunteering-info-description">
-                    <li class="volunteering-info-list-items">
-                        <p class="volunteering-info-p">Approved Volunteer Hours</p>
-                    </li>
-                    <li class="volunteering-info-list-items">
-                        <p class="volunteering-info-p">Resume-boosting experience</p>
-                    </li>
-                    <li class="volunteering-info-list-items">
-                        <p class="volunteering-info-p">Extra credit opportunities* from participating UD CISC classes</p>
-                    </li>
-                    <li class="volunteering-info-list-items">
-                        <p class="volunteering-info-p">A day full of excitement, innovation, and learning!💡</p>
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section class="text-center">
-            <h2>What you do:</h2>
-            <h3>There are many roles to fulfill as a volunteer!</h3>
-            <div>
+    <div class="container">
+        <div>
+            <h2 class="text-center">
+                Currently, we are looking for students to help make HenHacks as fun and engaging as possible on 
+                <strong>March 2-3, 2024</strong>!
+            </h2>
+            <section class="text-center">
+                <h2>What you gain:</h2>
                 <div class="img-laptop">
-                    <img class="inline" src="http://via.placeholder.com/650x300" alt=""></img>
+                    <img class="inline" src="http://via.placeholder.com/600x250" alt=""></img>
                 </div>
                 <div class="img-mobile">
                     <img class="inline" src="http://via.placeholder.com/300x250" alt=""></img>
                 </div>
+                
                 <article class="inline">
                     <ul class="volunteering-info-description">
-                        {% for info in site.data.volunteering.volunteering-info %}
-                            <li class="volunteering-info-list-items">
-                                <p class="volunteering-info-p">{{ info.info }}</p>
-                            </li>
-                        {% endfor %}
+                        <li class="volunteering-info-list-items">
+                            <p class="volunteering-info-p">Approved Volunteer Hours</p>
+                        </li>
+                        <li class="volunteering-info-list-items">
+                            <p class="volunteering-info-p">Resume-boosting experience</p>
+                        </li>
+                        <li class="volunteering-info-list-items">
+                            <p class="volunteering-info-p">Extra credit opportunities* from participating UD CISC classes</p>
+                        </li>
+                        <li class="volunteering-info-list-items">
+                            <p class="volunteering-info-p">A day full of excitement, innovation, and learning!💡</p>
+                        </li>
                     </ul>
                 </article>
-            </div>
-        </section>
-        <section>
-            <h2>No Computer Science experience? No problem!</h2>
-            <p>
-                You can help with registration, setting up, cleaning up, distributing meals/snacks, fun activities, and overseeing general activity! 
-                There are many opportunities for both helping and learning as a HenHacks Volunteer!
-            </p>
-        </section>
+            </section>
+            <section class="text-center">
+                <h2>What you do:</h2>
+                <h3>There are many roles to fulfill as a volunteer!</h3>
+                <div>
+                    <div class="img-laptop">
+                        <img class="inline" src="http://via.placeholder.com/600x250" alt=""></img>
+                    </div>
+                    <div class="img-mobile">
+                        <img class="inline" src="http://via.placeholder.com/300x250" alt=""></img>
+                    </div>
+                    <article class="inline">
+                        <ul class="volunteering-info-description">
+                            {% for info in site.data.volunteering.volunteering-info %}
+                                <li class="volunteering-info-list-items">
+                                    <p class="volunteering-info-p">{{ info.info }}</p>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <h2>No Computer Science experience? No problem!</h2>
+                <p>
+                    You can help with registration, setting up, cleaning up, distributing meals/snacks, fun activities, and overseeing general activity! 
+                    There are many opportunities for both helping and learning as a HenHacks Volunteer!
+                </p>
+            </section>
+        </div>
     </div>
-
 </div>
