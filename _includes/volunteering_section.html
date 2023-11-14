@@ -10,7 +10,13 @@
         </h2>
         <section class="text-center">
             <h2>What you gain:</h2>
-            <img class="inline" src="http://via.placeholder.com/650x300" alt=""></img>
+            <div class="img-laptop">
+                <img class="inline" src="http://via.placeholder.com/650x300" alt=""></img>
+            </div>
+            <div class="img-mobile">
+                <img class="inline" src="http://via.placeholder.com/300x250" alt=""></img>
+            </div>
+            
             <article class="inline">
                 <ul class="volunteering-info-description">
                     <li class="volunteering-info-list-items">
@@ -28,19 +34,26 @@
                 </ul>
             </article>
         </section>
-        <section>
+        <section class="text-center">
             <h2>What you do:</h2>
             <h3>There are many roles to fulfill as a volunteer!</h3>
-            <img class="inline" src="http://via.placeholder.com/650x300" alt=""></img>
-            <article class="inline">
-                <ul class="volunteering-info-description">
-                    {% for info in site.data.volunteering.volunteering-info %}
-                        <li class="volunteering-info-list-items">
-                            <p class="volunteering-info-p">{{ info.info }}</p>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </article>
+            <div>
+                <div class="img-laptop">
+                    <img class="inline" src="http://via.placeholder.com/650x300" alt=""></img>
+                </div>
+                <div class="img-mobile">
+                    <img class="inline" src="http://via.placeholder.com/300x250" alt=""></img>
+                </div>
+                <article class="inline">
+                    <ul class="volunteering-info-description">
+                        {% for info in site.data.volunteering.volunteering-info %}
+                            <li class="volunteering-info-list-items">
+                                <p class="volunteering-info-p">{{ info.info }}</p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </article>
+            </div>
         </section>
         <section>
             <h2>No Computer Science experience? No problem!</h2>

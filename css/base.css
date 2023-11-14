@@ -6,6 +6,34 @@
     --appleRed : #F25B59;
 }
 
+.img-laptop {
+    display: none;
+}
+.img-mobile {
+    display: none;
+}
+/* media rules for laptop */
+@media screen and (min-width: 600px) {
+    .img-mobile {
+        display: none;
+    }
+    .img-laptop {
+        display: block;
+    }
+}
+
+/* media rules for images on phone */
+@media screen and (max-width: 600px) {
+    .img-mobile {
+        display: block;
+    }
+    .img-laptop {
+        display: none;
+    }
+}
+
+
+
 .inline {
     display: inline-block;
 }
