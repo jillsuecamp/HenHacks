@@ -3,7 +3,8 @@
 - name: Volunteer
   link: /volunteer.html
 - name: Sponsor Us
-  link: /sponsorevent.html
+  link: https://drive.google.com/file/d/1vAurQeUOGM0VkHNCrV5HPh4RCgCjyBjq/view
+  target: true
 - name: Rules
   link: /rules.html
 - name: Schedule

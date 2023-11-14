@@ -104,18 +104,15 @@ event:
 
   hero:
     links:
-      - text: "Register"
-        my_mlh:
-          client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
-          redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
+      - text: "Register!"
+        href: "https://docs.google.com/forms/d/1Spd7-BngzG0EgO1-h5Vms70XPXS2xKmqdfWAOUNahjM"
       - text: "Sponsor Us!"
         href: "mailto:sponsorship@website.com"
 
   about:
     description: >
-      Our description will go here!
-      Here's some more text for fanciness
-      fancy fancy!
+     Join us as HenHacks makes its proud return for a second year, bringing together over [theme] students from across the state. This beginner-friendly hackathon takes place right on the University of Delaware campus and is open to college students of all majors. Our mission is to empower students by enhancing their technical skills, equipping them to positively impact their communities and excel in technology-related careers.
+
 
   # Info Sections
   info:
