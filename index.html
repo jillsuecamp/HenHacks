@@ -12,7 +12,7 @@ layout: default
   </div>
 </section>
 
-<section class="info">
+<section class="info" id="category">
   <div class="container">
     <div class="items row">
 	<div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
@@ -50,14 +50,38 @@ layout: default
   </div>
 </section>
 
-<section>
-<div class="buttons" id="sponsor">
-  {% for link in site.event.hero.links %}
-  {% if link.target %}
-  <a href="{{ link.href }}" target="_blank" rel="noopener noreferrer">{{ link.text }}</a>
-  {% endif %}
-  {% endfor %}
-</div>
+<section class="faq" id="rule">
+  <div class="container">
+    <h1 class="text-center">Rules</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <!--{% for item in site.event.faq %} 
+        <div class="question col-xs-12 col-sm-12">
+          <h2>{{ item.question }}</h2>
+          <hr>
+          {{ item.answer | markdownify }}
+        </div>
+        {% endfor %}
+	-->
+      </div>
+    </div>
+  </div>
+  </section>
+
+<section class="faq" id="sponsor">
+  <div class="container">
+    <h1 class="text-center">Sponsors</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <!--{% for item in site.event.faq %} 
+        <div class="question col-xs-12 col-sm-12">
+          <h2>{{ item.question }}</h2>
+          <hr>
+          {{ item.answer | markdownify }}
+        </div>
+        {% endfor %}
+	-->
+      </div>
+    </div>
+    </div>
 </section>
-
-

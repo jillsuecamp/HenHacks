@@ -2,12 +2,13 @@
   link: index
 - name: FAQ
   link: index#faq
+- name: Categories
+  link: index#category
 - name: Volunteer
   link: volunteer
-- name: Sponsors
-  link: https://drive.google.com/file/d/1vAurQeUOGM0VkHNCrV5HPh4RCgCjyBjq/view
-  target: true
 - name: Rules
-  link: rules
+  link: index#rule
+- name: Sponsors
+  link: index#sponsor
 - name: Schedule
   link: schedule
