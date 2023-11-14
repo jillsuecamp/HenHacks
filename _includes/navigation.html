@@ -42,7 +42,7 @@
   <p class="hentitle">HenHacks &OpenCurlyQuote;24</p>
   <nav class="bar">
     {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" class="text">{{ item.name }}</a>		
+    <a href="{{ item.link }}" {% if item.target %} target="_blank" rel="noopener noreferrer" {% endif %} class="text">{{ item.name }}</a>		
     {% endfor %}
   </nav>
 </body>
