@@ -1,0 +1,22 @@
+.clock {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 18% 18% 18% 18% 18% 5%;
+}
+
+@media screen and (max-width: 600px) {
+    .clock {
+        display: none;
+    }
+}
+.clock-element-container {
+    padding: 2px;
+}
+
+.clock-element {
+    font-size: 32px;
+    background-color: var(--white);
+    border: 2px solid var(--samonOrange);
+    border-radius: 10px;
+    height: 100px;
+}
