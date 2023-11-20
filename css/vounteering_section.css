@@ -1,17 +1,44 @@
-
+.volunteering-section-container {
+    color: var(--white);
+}
 
 .volunteering-info {
-    background-color: var(--appleRed);
+    background-color: var(--deepOceanBlue);
+}
+
+.volunteering-img {
+    margin-bottom: 10px;
 }
 
 .volunteering-info-description {
     list-style-type: none;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
-.volunteering-info-list-items {
-    text-align: left;
+.volunteering-info-header {
+    background-color: var(--salmonOrange);
+}
+
+.volunteering-info-footer{
+    background-color: var(--appleRed);
+    border: 2px solid var(--appleRed);
+    border-radius: 5px;
 }
 
 .volunteering-info-p {
     font-size: large;
+    text-align: left;
+    background-color: var(--appleRed);
+    border: 2px solid var(--appleRed);
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 600px) {
+    .volunteering-info-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
