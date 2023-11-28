@@ -53,18 +53,15 @@ layout: default
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         {% for item in site.data.faq.faqs %}
         <div class="question col-xs-12 col-sm-12">
-          <button onclick="triggerDropdown(event)" class="dropdown-btn">
+          <button onclick="triggerDropdown(event)" class="dropdown-btn homepage-dropdown-btn">
             <h2 class="clickthrough">
               <p class="inline">{{ item.question }}</p>
-              <div class="inline arrow-right"></div>
+              <div class="inline">+</div>
             </h2>
-            <div class="dropdown-content">
+            <div class="dropdown-content homepage-dropdown-content">
               {{ item.answer | markdownify }}
             </div>
-            
           </button> 
-          
-          
         </div>
         {% endfor %}
       </div>

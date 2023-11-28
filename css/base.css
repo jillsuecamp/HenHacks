@@ -46,21 +46,13 @@
 }
 
 /* for button dropdowns */
-.arrow-right {
-    width: 0;
-    height: 0;
-    
-    border-top: 16px solid transparent;
-    border-bottom: 16px solid transparent;
-    
-    border-left: 20px solid var(--white);
-}
 
 .dropdown-btn {
     width: 100%;
     border: 2px var(--deepOceanBlue) solid;
     border-radius: 25px;
     transition: all 5s ease;
+    margin-bottom: 10px;
 }
 
 .dropdown-content {
@@ -74,4 +66,17 @@
 
 .clickthrough {
     pointer-events: none;
+}
+
+.homepage-dropdown-btn {
+    color: var(--white);
+    background-color: var(--deepOceanBlue);
+    border: 2px solid var(--deepOceanBlue);
+    border-radius: 15px;
+}
+
+.homepage-dropdown-content {
+    background-color: var(--appleRed);
+    border: 2px solid var(--appleRed);
+    border-radius: 15px;
 }
