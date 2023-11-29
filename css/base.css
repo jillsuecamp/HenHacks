@@ -1,0 +1,82 @@
+:root {
+    --samonOrange : #F79B6E;
+    --white : #FFFFFF;
+    --deepOceanBlue : #0F4A7D;
+    --pigPink : #F8BDD5;
+    --appleRed : #F25B59;
+}
+
+.img-laptop .img-mobile{
+    width: fit-content;
+}
+/* media rules for laptop sized images*/
+@media screen and (min-width: 600px) {
+    .img-mobile {
+        display: none;
+    }
+    .img-laptop {
+        display: block;
+    }
+}
+
+/* media rules for images on phone sized images*/
+@media screen and (max-width: 600px) {
+    .img-mobile {
+        display: block;
+    }
+    .img-laptop {
+        display: none;
+    }
+}
+
+
+
+.inline {
+    display: inline-block;
+}
+
+.left-text-align {
+    position: relative;
+    text-align: left;
+}
+
+.right-text-align {
+    position: relative;
+    text-align: right;
+}
+
+/* for button dropdowns */
+
+.dropdown-btn {
+    width: 100%;
+    border: 2px var(--deepOceanBlue) solid;
+    border-radius: 25px;
+    transition: all 5s ease;
+    margin-bottom: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    pointer-events: none;
+}
+
+.show-dropdown {
+    display: block;
+}
+
+.clickthrough {
+    pointer-events: none;
+}
+
+.homepage-dropdown-btn {
+    color: var(--white);
+    background-color: var(--deepOceanBlue);
+    border: 2px solid var(--deepOceanBlue);
+    border-radius: 15px;
+}
+
+.homepage-dropdown-content {
+    background-color: var(--appleRed);
+    border: 2px solid var(--appleRed);
+    border-radius: 15px;
+}

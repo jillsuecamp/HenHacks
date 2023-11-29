@@ -39,6 +39,11 @@ event:
   description: "This is a sample hackathon website that you can use by following instructions on GitHub."
   date:        "5 - 6 August 2022"
   location:    "Holmdel, NJ, United States"
+  dateTime:
+    year: "2024"
+    month: "March"
+    day:  "2"
+    hour: "10"
 
   trust_badge:
     year:   "2017"  # season year
@@ -46,61 +51,6 @@ event:
     color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
   display_schedule: "true"
-  schedule:
-    - name: "Day 1"
-      events:
-        - name: "DOORS OPEN"
-          time: "10:00"
-          sub-events:
-            - name: "Opening Remarks"
-              time : "11:00"
-            - name: "Opening Remarks"
-              time : "11:00"
-        - name: "LUNCH"
-          time: "12:00"
-          sub-events:
-            - name: "Bank of America Workshop"
-              time : "1:00"
-            - name: "Autonomous Driving"
-              time : "1:30"
-            - name: "M&T Workshop"
-              time : "2:00"
-            - name: "Meet the Companies"
-              time : "3:15"
-            - name: "Labware Workshop"
-              time : "4:15"
-            - name: "Chase Workshop"
-              time : "5:30"
-        - name: "Dinner"
-          time: "6:00"
-          sub-events:
-            - name: "Egg hunt"
-              time: "6:00"
-            - name: "LEGO-off"
-              time: "6:30"
-            - name: "Just Dance"
-              time: "7:00"
-            - name: "Autograding Workshop"
-              time: "8:00"
-            - name: "Hack Workshop"
-              time: "8:30"
-    - name: "Day 2"
-      events:
-        - name: "Breakfast"
-          time: "8:00"
-        - name: "Hacks due and Lunch Starts"
-          time: "12:00"
-          sub-events:
-            - name: "Presenting hacks starts"
-              time: "12:00"
-            - name: "Presenting hacks ends"
-              time: "2:00"
-            - name: "Judging"
-              time: "2:00"
-        - name: "Award Ceremony"
-          time: "3:00"
-        - name: "Doors close"
-          time: "4:00"
 
   hero:
     links:
@@ -131,30 +81,6 @@ event:
         title: "SHARE."
         description: >
           We can write something nice with a graphic (as above) to make the event more appealing.
-
-  # Frequently asked questions.
-  faq:
-    - question: "What is a hackathon?"
-      answer: >
-        A hackathon is an invention marathon. Students come together to build cool
-        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
-    - question: "How much does it cost?"
-      answer: >
-        Nothing. Attending a hackathon is free.
-    - question: "Do I need to be a student to attend?"
-      answer: >
-        Yes. Only students who are currently enrolled at a college/university or
-        have graduated within the past 12 months are eligible to attend.
-    - question: "Where is the event?"
-      answer: >
-        The event is being hosted at [insert venue location here].
-    - question: "What is Major League Hacking?"
-      answer: >
-        Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
-        We work with over 200 Member Events and empower over 70,000 students every year.
-    - question: "Is there a code of conduct?"
-      answer: >
-        Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
 
   # This is the message you'll receive once you've registered.
   register:
