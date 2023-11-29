@@ -16,9 +16,14 @@ layout: default
   {% include count_down.html %}
 </section>
 
-<section class="info">
+<section class="info" id="category">
   <div class="container">
     <div class="items row">
+	<div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+		<div class="description">
+			{{ site.event.info.description | markdownify }}
+		</div>
+	</div>
       {% for section in site.event.info.sections %}
         <div class="col-xs-12 col-sm-4 text-center">
           <div class="item">
@@ -46,7 +51,7 @@ layout: default
   </section>
 {% endif %}
 
-<section class="faq">
+<section class="faq" id="faq">
   <div class="container">
     <h1 class="text-center">FAQ</h1>
     <div class="row">
@@ -67,4 +72,40 @@ layout: default
       </div>
     </div>
   </div>
+</section>
+
+<section class="faq" id="rule">
+  <div class="container">
+    <h1 class="text-center">Rules</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <!--{% for item in site.event.faq %} 
+        <div class="question col-xs-12 col-sm-12">
+          <h2>{{ item.question }}</h2>
+          <hr>
+          {{ item.answer | markdownify }}
+        </div>
+        {% endfor %}
+	-->
+      </div>
+    </div>
+  </div>
+  </section>
+
+<section class="faq" id="sponsor">
+  <div class="container">
+    <h1 class="text-center">Sponsors</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <!--{% for item in site.event.faq %} 
+        <div class="question col-xs-12 col-sm-12">
+          <h2>{{ item.question }}</h2>
+          <hr>
+          {{ item.answer | markdownify }}
+        </div>
+        {% endfor %}
+	-->
+      </div>
+    </div>
+    </div>
 </section>

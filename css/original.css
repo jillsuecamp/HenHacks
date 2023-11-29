@@ -181,6 +181,12 @@ section {
   font-size: 20px;
 }
 
+.info .description p {
+  font-family: 'Montserrat';
+  font-size: 68px;
+  font-weight: 700;
+}
+
 /*
  * FAQ Section
  */

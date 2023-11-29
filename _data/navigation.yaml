@@ -1,0 +1,14 @@
+- name: Home
+  link: index
+- name: FAQ
+  link: index#faq
+- name: Categories
+  link: index#category
+- name: Volunteer
+  link: volunteer
+- name: Rules
+  link: index#rule
+- name: Sponsors
+  link: index#sponsor
+- name: Schedule
+  link: schedule

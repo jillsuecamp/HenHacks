@@ -1,0 +1,55 @@
+<style>
+  .bar {
+      /* Flex Box Stuff */
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 30px;
+     /* padding-right: 200px; */
+      padding-top: 2%;
+     /* padding-left: 50%; /* 950px */
+      padding-right: 5%;
+      flex-grow: 1;
+      margin-right: auto;
+      margin-bottom: 0;
+      /* background: yellow; */
+      float: right;
+  }
+
+  .hentitle {
+      display: inline-block;
+      font-size: 30px;
+      padding-left: 3%;
+      padding-top: 1%;
+   /*   background: green; */
+      width: 15%;
+  }
+
+  .text {
+      /* Text within items */
+      font-size: 20px;
+      color: #F8BDD5;
+      
+
+      transition: all 1s ease-in-out;
+  }
+
+  .text:hover {
+      font-size: 150%;
+      transition: all 1s ease-out;
+      text-decoration: none;
+  }
+
+  .bg {
+      background: #F25B59
+  }
+</style>
+
+<body style="background: crimson;">
+  <p class="hentitle">HenHacks &OpenCurlyQuote;24</p>
+  <nav class="bar">
+    {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if item.target %} target="_blank" rel="noopener noreferrer" {% endif %} class="text">{{ item.name }}</a>		
+    {% endfor %}
+  </nav>
+</body>
