@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<section>
+  <div>
+    {% for item in site.data.about_us %}
+    <img src="{{item.image}}">
+    <p>{{item.name}}</p>
+    <a href="{{item.linkedin"}} target="_blank" rel="noopener noreferrer">linkedin</a>
+    {% endfor %}
+  </div>
+</section>
