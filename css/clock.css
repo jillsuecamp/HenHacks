@@ -1,7 +1,7 @@
 .clock {
     width: 100%;
     display: grid;
-    grid-template-columns: 5% 18% 18% 18% 18% 18% 5%;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
 }
 
 @media screen and (max-width: 600px) {

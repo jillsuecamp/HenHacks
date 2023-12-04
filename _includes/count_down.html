@@ -1,10 +1,6 @@
 <div class="clock">
     <div></div>
     <div class="clock-element-container text-center">
-        <p class="clock-label">Months</p>
-        <p id="months" class="clock-element"></p>
-    </div>
-    <div class="clock-element-container text-center">
         <p class="clock-label">Days</p>
         <p id="days" class="clock-element"></p>
     </div>
@@ -39,8 +35,6 @@
         var time = startDate.getTime() - Date.now();
             
         // calculating time until
-        // assuming 30 days in a month
-        var monthsUntil = Math.floor(time / (1000 * 60 * 60 * 24 * 30));
         var daysUntil = Math.floor(time / (1000 * 60 * 60 * 24));
         var hoursUntil = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutesUntil = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
@@ -48,7 +42,6 @@
         // console.log(`Months: ${monthsUntil}`,`Days: ${daysUntil}`,`Hours: ${hoursUntil}`,`MinutesUntil: ${minutesUntil}`,`Seconds: ${secondsUntil}`)
         
         // get every element inside the clock by id
-        document.getElementById("months").textContent = monthsUntil;
         document.getElementById("days").textContent = daysUntil;
         document.getElementById("hours").textContent = hoursUntil;
         document.getElementById("minutes").textContent = minutesUntil;
