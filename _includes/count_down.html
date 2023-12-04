@@ -1,0 +1,66 @@
+<div class="clock">
+    <div></div>
+    <div class="clock-element-container text-center">
+        <p class="clock-label">Months</p>
+        <p id="months" class="clock-element"></p>
+    </div>
+    <div class="clock-element-container text-center">
+        <p class="clock-label">Days</p>
+        <p id="days" class="clock-element"></p>
+    </div>
+    <div class="clock-element-container text-center">
+        <p class="clock-label">Hours</p>
+        <p id="hours" class="clock-element"></p>
+    </div>
+    <div class="clock-element-container text-center">
+        <p class="clock-label">Minutes</p>
+        <p id="minutes" class="clock-element"></p>
+    </div>
+    <div class="clock-element-container text-center">
+        <p class="clock-label">Seconds</p>
+        <p id="seconds" class="clock-element"></p>
+    </div>
+    <div></div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    // this date is hardcoded for now, but should be moved into the site config file
+    const startDate = new Date("2024", "2", "2", "10");
+
+    const setClock = (startDate) => {
+        var time = startDate.getTime() - Date.now();
+            
+        // calculating time until
+        // assuming 30 days in a month
+        var monthsUntil = Math.floor(time / (1000 * 60 * 60 * 24 * 30));
+        var daysUntil = Math.floor(time / (1000 * 60 * 60 * 24));
+        var hoursUntil = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutesUntil = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+        var secondsUntil = Math.floor((time % (1000 * 60)) / 1000);
+        // console.log(`Months: ${monthsUntil}`,`Days: ${daysUntil}`,`Hours: ${hoursUntil}`,`MinutesUntil: ${minutesUntil}`,`Seconds: ${secondsUntil}`)
+        
+        // get every element inside the clock by id
+        document.getElementById("months").textContent = monthsUntil;
+        document.getElementById("days").textContent = daysUntil;
+        document.getElementById("hours").textContent = hoursUntil;
+        document.getElementById("minutes").textContent = minutesUntil;
+        document.getElementById("seconds").textContent = secondsUntil;
+    }
+    
+    // the clock continues to "countdown" until the start date is in the past
+    // while(startDate - Date.now() > 0) {
+        setClock(startDate);
+        setInterval(function() {
+            setClock(startDate);
+        }, 1000);
+    // }
+    
+</script>

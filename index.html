@@ -12,6 +12,10 @@ layout: default
   </div>
 </section>
 
+<section>
+  {% include count_down.html %}
+</section>
+
 <section class="info" id="category">
   <div class="container">
     <div class="items row">
@@ -33,16 +37,36 @@ layout: default
   </div>
 </section>
 
+<section class="volunteering-info">
+  <div class="">
+    {% include volunteering_section.html %}
+  </div>
+</section>
+
+{% if site.event.display_schedule == "true" %}
+  <section class="info">
+    <div class="container">
+      {% include day_of_schedule.html %}
+    </div>
+  </section>
+{% endif %}
+
 <section class="faq" id="faq">
   <div class="container">
     <h1 class="text-center">FAQ</h1>
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        {% for item in site.event.faq %}
+        {% for item in site.data.faq.faqs %}
         <div class="question col-xs-12 col-sm-12">
-          <h2>{{ item.question }}</h2>
-          <hr>
-          {{ item.answer | markdownify }}
+          <button onclick="triggerDropdown(event)" class="dropdown-btn homepage-dropdown-btn">
+            <h2 class="clickthrough">
+              <p class="inline">{{ item.question }}</p>
+              <div class="inline">+</div>
+            </h2>
+            <div class="dropdown-content homepage-dropdown-content">
+              {{ item.answer | markdownify }}
+            </div>
+          </button> 
         </div>
         {% endfor %}
       </div>
