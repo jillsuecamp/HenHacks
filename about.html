@@ -1,13 +1,16 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="css/about.css">
 
 <section>
-  <div>
-    {% for item in site.data.about_us %}
-    <img src="{{item.image}}">
-    <p>{{item.name}}</p>
-    <a href="{{item.linkedin"}} target="_blank" rel="noopener noreferrer">linkedin</a>
-    {% endfor %}
+  <div class="container">
+    <div>
+      {% for item in site.data.about_us %}
+      <img src="images/headshots/{{item.image}}" class="headshot">
+      <figcaption class="name">{{item.name}}
+      <a href="{{item.linkedin}}" target="_blank" rel="noopener noreferrer" class="linkedin">linkedin</a> </figcaption>
+      {% endfor %}
+    </div>
   </div>
 </section>
