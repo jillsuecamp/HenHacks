@@ -8,8 +8,9 @@ layout: default
     {% for item in site.data.about_us %}
     <span class="box">
       <img src="images/headshots/{{item.image}}" class="headshot">
-      <figcaption class="name">{{item.name}}
-	<a href="{{item.linkedin}}" target="_blank" rel="noopener noreferrer" class="linkedin">linkedin</a> </figcaption>
+      <figcaption class="name">{{item.name}}</figcaption>
+      <p>{{item.position}}</p>
+      <a href="{{item.linkedin}}" target="_blank" rel="noopener noreferrer" class="linkedin">linkedin</a>
     </span>
     {% endfor %}
 
