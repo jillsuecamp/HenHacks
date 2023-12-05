@@ -1,13 +1,23 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    
+    row-gap: 20px;
+}
+
+.box {
+    width: 25%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-text: center;
 }
 
 .headshot {    
-    width: 10%;
-    height: 5%;
+    width: 90%;
+    height: 90%;
+    float: center;
+    object-fit: cover;
     border: 1px solid #000;
 }
 
