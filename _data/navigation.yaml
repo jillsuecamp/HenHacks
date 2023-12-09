@@ -1,18 +1,18 @@
 - name: Home
   link: index
-- name: About Us
-  link: about
 - name: FAQ
   link: index#faq
+- name: Schedule
+  link: index#schedule
+- name: Sponsors
+  link: index#sponsor
+- name: About Us
+  link: about
+- name: 23'
+  link: https://www.henhackshackathon.com/henhacks-2023
 - name: Categories
   link: index#category
 - name: Volunteer
   link: volunteer
 - name: Rules
   link: index#rule
-- name: Sponsors
-  link: index#sponsor
-- name: Schedule
-  link: schedule
-- name: 23'
-  link: https://www.henhackshackathon.com/henhacks-2023
