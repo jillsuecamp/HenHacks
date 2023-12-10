@@ -1,22 +1,58 @@
 .clock {
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-columns: 5% 90% 5%
 }
 
-@media screen and (max-width: 600px) {
-    .clock {
-        display: none;
-    }
+.clock-container {
+    display: flex;
+    justify-content: space-evenly;
 }
+
 .clock-element-container {
-    padding: 2px;
+    width: 5em;
+    padding: 10px;
+    display: inline-block;
+    background-color: var(--appleRed);
+    border: 2px solid var(--appleRed);
+    border-radius: 15px;
+    width: 150px;
 }
 
 .clock-element {
+    font-size: xx-large * 2;
+    color: var(--white);
+}
+
+.clock-element-label {
     font-size: 32px;
-    background-color: var(--white);
-    border: 2px solid var(--samonOrange);
-    border-radius: 10px;
-    height: 100px;
+    color: var(--white);
+}
+
+.clock-element {
+    color: var(--white);
+    font-size: 48px;
+}
+
+.clock-header {
+    font-size: 96px;
+    color: var(--white);
+}
+
+@media screen and (max-width: 699px) {
+    .clock-header {
+        font-size: 48px;
+    }
+
+    .clock-element-label {
+        font-size: 12px;
+    }
+
+    .clock-element {
+        font-size: 36px;
+    }
+
+    .clock-element-container {
+        width: 90px;
+    }
 }

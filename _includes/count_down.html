@@ -1,20 +1,25 @@
+<h1 class="clock-header text-center">
+    Days Until HenHacks!
+</h1>
 <div class="clock">
     <div></div>
-    <div class="clock-element-container text-center">
-        <p class="clock-label">Days</p>
-        <p id="days" class="clock-element"></p>
-    </div>
-    <div class="clock-element-container text-center">
-        <p class="clock-label">Hours</p>
-        <p id="hours" class="clock-element"></p>
-    </div>
-    <div class="clock-element-container text-center">
-        <p class="clock-label">Minutes</p>
-        <p id="minutes" class="clock-element"></p>
-    </div>
-    <div class="clock-element-container text-center">
-        <p class="clock-label">Seconds</p>
-        <p id="seconds" class="clock-element"></p>
+    <div class="clock-container">
+        <div class="clock-element-container text-center">
+            <p class="clock-element-label">Days</p>
+            <p id="days" class="clock-element"></p>
+        </div>
+        <div class="clock-element-container text-center">
+            <p class="clock-element-label">Hours</p>
+            <p id="hours" class="clock-element"></p>
+        </div>
+        <div class="clock-element-container text-center">
+            <p class="clock-element-label">Minutes</p>
+            <p id="minutes" class="clock-element"></p>
+        </div>
+        <div class="clock-element-container text-center">
+            <p class="clock-element-label">Seconds</p>
+            <p id="seconds" class="clock-element"></p>
+        </div>
     </div>
     <div></div>
 </div>
@@ -42,10 +47,10 @@
         // console.log(`Months: ${monthsUntil}`,`Days: ${daysUntil}`,`Hours: ${hoursUntil}`,`MinutesUntil: ${minutesUntil}`,`Seconds: ${secondsUntil}`)
         
         // get every element inside the clock by id
-        document.getElementById("days").textContent = daysUntil;
-        document.getElementById("hours").textContent = hoursUntil;
-        document.getElementById("minutes").textContent = minutesUntil;
-        document.getElementById("seconds").textContent = secondsUntil;
+        document.getElementById("days").textContent = `${daysUntil}`;
+        document.getElementById("hours").textContent = `${hoursUntil}`;
+        document.getElementById("minutes").textContent = `${minutesUntil}`;
+        document.getElementById("seconds").textContent = `${secondsUntil}`;
     }
     
     // the clock continues to "countdown" until the start date is in the past
